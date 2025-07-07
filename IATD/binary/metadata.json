@@ -1,0 +1,85 @@
+{
+    "features": {
+        "categorical_cols": {
+            "protocol": "int8"
+        },
+        "numerical_cols": {
+            "ttl": "float32",
+            "ip_len": "float32",
+            "ip_flag_df": "float32",
+            "ip_flag_mf": "float32",
+            "ip_flag_rb": "float32",
+            "src_port": "int32",
+            "dst_port": "int32",
+            "tcp_flag_res": "float32",
+            "tcp_flag_ns": "float32",
+            "tcp_flag_cwr": "float32",
+            "tcp_flag_ecn": "float32",
+            "tcp_flag_urg": "float32",
+            "tcp_flag_ack": "float32",
+            "tcp_flag_push": "float32",
+            "tcp_flag_reset": "float32",
+            "tcp_flag_syn": "float32",
+            "tcp_flag_fin": "float32",
+            "mqtt_messagetype": "float32",
+            "mqtt_messagelength": "float32",
+            "mqtt_flag_uname": "float32",
+            "mqtt_flag_passwd": "float32",
+            "mqtt_flag_retain": "float32",
+            "mqtt_flag_qos": "float32",
+            "mqtt_flag_willflag": "float32",
+            "mqtt_flag_clean": "float32",
+            "mqtt_flag_reserved": "float32"
+        },
+        "category_mappings": {
+            "protocol": {
+                "0": "CLDAP",
+                "1": "DATA",
+                "2": "DHCP",
+                "3": "DNS",
+                "4": "DTLS",
+                "5": "DVB_SDT",
+                "6": "ECHO",
+                "7": "ISAKMP",
+                "8": "MDNS",
+                "9": "MP2T",
+                "10": "MPEG_PAT",
+                "11": "MPEG_PMT",
+                "12": "MQTT",
+                "13": "NAT-PMP",
+                "14": "NBNS",
+                "15": "NFS",
+                "16": "NTP",
+                "17": "PORTMAP",
+                "18": "RADIUS",
+                "19": "RIP",
+                "20": "SNMP",
+                "21": "SRVLOC",
+                "22": "SSH",
+                "23": "TCP",
+                "24": "UDP",
+                "25": "XDMCP"
+            }
+        }
+    },
+    "target": {
+        "name": "label",
+        "unique_values": [
+            "benign",
+            "malign"
+        ],
+        "dtype": "int8",
+        "label_to_index": {
+            "benign": 0,
+            "malign": 1
+        },
+        "index_to_label": {
+            "0": "benign",
+            "1": "malign"
+        },
+        "value_counts": {
+            "1": 332001,
+            "0": 262868
+        }
+    }
+}
